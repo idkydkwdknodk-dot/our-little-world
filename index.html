@@ -1,112 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Our Little World ❤️</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Cute Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Razia</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-    <!-- Background -->
-    <div id="background"></div>
-
-    <!-- Floating Hearts -->
-    <div id="hearts"></div>
-
-    <!-- Floating Stars -->
-    <div id="stars"></div>
-
-    <!-- Welcome Screen -->
-    <section id="welcome">
-
-        <div class="envelope">
-
-            <div class="heart">
-                ❤️
-            </div>
-
-            <h1>Someone made something just for you</h1>
-
-            <button id="openButton">
-                Open
-            </button>
-
+  <!-- ═══════════════════════════════ -->
+  <!-- LANDING PAGE                   -->
+  <!-- ═══════════════════════════════ -->
+  <div id="landing">
+    <div class="landing-inner">
+      <div class="envelope-wrap">
+        <div id="envelope" class="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="envelope-letter-peek">✉</div>
+          </div>
         </div>
-
-    </section>
-
-    <!-- Homepage (hidden initially) -->
-
-    <section id="mainPage">
-
-        <h1 class="title">
-            Our Little World ❤️
-        </h1>
-
-        <p class="subtitle">
-            Every moment with you is my favorite memory.
-        </p>
-
-        <!-- Photos go here later -->
-        <div id="photoContainer">
-
-        </div>
-
-        <div class="buttons">
-
-            <button id="messageButton">
-                💌 Read My Letter
-            </button>
-
-            <button id="galleryButton">
-                📷 Memories
-            </button>
-
-            <button id="musicButton">
-                🎵 Music
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- Love Letter Popup -->
-
-    <div id="letterPopup">
-
-        <div class="letter">
-
-            <span id="closeLetter">
-                ✖
-            </span>
-
-            <h2>
-                To My Favorite Person ❤️
-            </h2>
-
-            <div id="letterContent">
-
-                Your message will go here...
-
-            </div>
-
-        </div>
-
+      </div>
+      <p class="landing-for">For Razia</p>
+      <p class="landing-sub">A small corner of the internet,<br>made only for you.</p>
+      <button id="open-btn" class="open-btn">Open</button>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- ═══════════════════════════════ -->
+  <!-- TRANSITION OVERLAY             -->
+  <!-- ═══════════════════════════════ -->
+  <div id="transition-overlay" class="hidden">
+    <p id="typing-text" class="typing-text"></p>
+  </div>
 
+  <!-- ═══════════════════════════════ -->
+  <!-- MAIN SITE                       -->
+  <!-- ═══════════════════════════════ -->
+  <div id="main-site" class="hidden">
+
+    <!-- HOMEPAGE -->
+    <section id="homepage" class="section section-home">
+      <div class="home-photo-wrap reveal">
+        <img src="images/001.jpeg" alt="Memory" class="cover-photo" />
+        <div class="photo-vignette"></div>
+      </div>
+      <div class="home-text reveal">
+        <p class="home-name">For Razia</p>
+        <p class="home-tagline">Every memory with you<br>became my favorite.</p>
+      </div>
+      <div class="scroll-hint reveal">scroll ↓</div>
+    </section>
+
+    <!-- FLOATING PHOTOS / MEMORY SECTION -->
+    <section id="memories" class="section section-memories">
+      <div class="memory-block reveal">
+        <img src="images/002.jpeg" alt="Memory 2" class="memory-photo float-left" />
+        <div class="memory-caption">
+          <p>There are moments I keep coming back to.</p>
+        </div>
+      </div>
+      <div class="memory-block reveal">
+        <div class="memory-caption right">
+          <p>Little ones that live rent-free in my head.</p>
+        </div>
+        <img src="images/003.jpeg" alt="Memory 3" class="memory-photo float-right" />
+      </div>
+      <div class="memory-block reveal center">
+        <img src="images/004.jpeg" alt="Memory 4" class="memory-photo float-center" />
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section id="story" class="section section-story">
+      <div class="story-inner reveal">
+        <p class="story-label">Our Story</p>
+        <p class="story-text">
+          Some things don't need a timeline.<br>
+          They just need to be felt.<br><br>
+          And I felt everything — every laugh,<br>
+          every quiet moment, every single time<br>
+          you made ordinary feel extraordinary.
+        </p>
+      </div>
+    </section>
+
+    <!-- LETTER TRIGGER -->
+    <section id="letter-section" class="section section-letter-trigger">
+      <div class="reveal">
+        <p class="letter-invite">I wrote you something.</p>
+        <button id="read-letter-btn" class="read-letter-btn">Read My Letter</button>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section-gallery">
+      <p class="gallery-title reveal">Us, in photographs.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal"><img src="images/005.jpeg"  alt="Memory 5"  /></div>
+        <div class="gallery-item reveal"><img src="images/006.jpeg"  alt="Memory 6"  /></div>
+        <div class="gallery-item reveal"><img src="images/007.jpeg"  alt="Memory 7"  /></div>
+        <div class="gallery-item reveal"><img src="images/008.jpeg"  alt="Memory 8"  /></div>
+        <div class="gallery-item reveal"><img src="images/009.jpeg"  alt="Memory 9"  /></div>
+        <div class="gallery-item reveal"><img src="images/010.jpeg" alt="Memory 10" /></div>
+        <div class="gallery-item reveal"><img src="images/011.jpeg" alt="Memory 11" /></div>
+        <div class="gallery-item reveal"><img src="images/012.jpeg" alt="Memory 12" /></div>
+      </div>
+    </section>
+
+    <!-- ENDING -->
+    <section id="ending" class="section section-ending">
+      <div class="ending-inner reveal">
+        <p>Thank you.</p>
+        <p>For every smile.</p>
+        <p>For every memory.</p>
+        <p>For being you.</p>
+        <p class="heart">♡</p>
+      </div>
+    </section>
+
+  </div><!-- end #main-site -->
+
+  <!-- ═══════════════════════════════ -->
+  <!-- LETTER OVERLAY                  -->
+  <!-- ═══════════════════════════════ -->
+  <div id="letter-overlay" class="hidden">
+    <div class="letter-paper">
+      <button id="close-letter-btn" class="close-letter-btn">✕</button>
+      <div class="letter-content">
+        <p class="letter-salutation">Dear Razia,</p>
+        <p>
+          There's something I've wanted to say for a while,
+          and I never quite found the right moment.
+          So I made one.
+        </p>
+        <p>
+          I want you to know — every memory with you
+          has a special place. The ones that made me laugh
+          until my stomach hurt. The quiet ones.
+          The ones that felt like they were ours alone.
+        </p>
+        <p>
+          You make the world feel a little warmer.
+          A little softer. A lot more beautiful.
+        </p>
+        <p>
+          This small corner of the internet is yours.
+          Made with love. Made only for you.
+        </p>
+        <p class="letter-closing">
+          Always,<br />
+          <span class="letter-signature">yours truly ♡</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- SECRET FLOWER                   -->
+  <!-- ═══════════════════════════════ -->
+  <div id="secret-flower" class="secret-flower hidden-init">🌼</div>
+  <div id="sticky-note" class="sticky-note hidden">
+    <p>pssst — you found it. ♡<br>this little flower is just for you.<br>just like all of this.</p>
+    <button id="close-sticky" class="close-sticky">✕</button>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="music-hello"  loop src="music/hello-pumpkin.mp3"></audio>
+  <audio id="music-letter" loop src="music/until-i-found-you.mp3"></audio>
+
+  <script src="jss/app.js"></script>
 </body>
-
 </html>
