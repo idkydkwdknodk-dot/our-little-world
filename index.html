@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>For Razia 🤍</title>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <!-- Background -->
-    <div class="background"></div>
+    <!-- Audio -->
+    <audio id="pumpkinMusic" loop>
+        <source src="music/pumpkin.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="letterMusic" loop>
+        <source src="music/until-i-found-you.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- Landing -->
-    <section id="landing" class="landing">
+    <section id="landing">
 
         <div class="landing-content">
 
@@ -32,7 +36,7 @@
             </p>
 
             <h1>
-                A small corner of the internet,<br>
+                A small corner of the internet,
                 made only for you.
             </h1>
 
@@ -45,40 +49,103 @@
     </section>
 
     <!-- Hero -->
-    <section id="hero" class="hero">
 
-        <div class="hero-image">
+    <section id="hero">
 
-            <img src="images/hero.jpeg" alt="Our favorite memory">
+        <img src="images/hero.jpeg" alt="Hero Photo">
 
-        </div>
+        <h2>
+            Every memory with you became one of my favorites.
+        </h2>
 
-        <div class="hero-text">
+        <p>
+            I wanted to make something that lasts
+            a little longer than a message.
+        </p>
 
-            <h2>Every memory with you became one of my favorites.</h2>
+    </section>
 
-            <p>
-                I wanted to make something that lasts a little longer than a message.
-                So... I made this little place just for you.
-            </p>
+    <!-- Little Moments -->
+
+    <section id="moments">
+
+        <h2>
+            Little Moments
+        </h2>
+
+        <div class="moments-container">
+
+            <!-- Photos go here later -->
 
         </div>
 
     </section>
 
-    <!-- Memories (placeholder for now) -->
-    <section id="memories">
+    <!-- Letter -->
 
-        <h2>Our Memories</h2>
+    <section id="letter">
+
+        <h2>
+            A Letter For You
+        </h2>
+
+        <button id="letterBtn">
+
+            Read My Letter
+
+        </button>
+
+    </section>
+
+    <!-- Memory Wall -->
+
+    <section id="gallery">
+
+        <h2>
+
+            Our Memories
+
+        </h2>
+
+        <div class="gallery-grid">
+
+        </div>
+
+    </section>
+
+    <!-- Ending -->
+
+    <section id="ending">
+
+        <h2>
+
+            Thank You.
+
+        </h2>
 
         <p>
-            This is where our story will slowly unfold...
+
+            For every smile.
+
+            <br><br>
+
+            For every memory.
+
+            <br><br>
+
+            For being you.
+
         </p>
+
+        <h3>
+
+            For Razia.
+
+        </h3>
 
     </section>
 
     <script src="js/app.js"></script>
 
 </body>
-
 </html>
