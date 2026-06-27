@@ -1,11 +1,162 @@
+/* ------------------------------
+   FOR RAZIA ❤️
+   Designed with love.
+------------------------------ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
 
-margin:0;
+    font-family:'Poppins',sans-serif;
 
-font-family:'Poppins',sans-serif;
+    background:#F8F5F2;
 
-background:#fff5f7;
+    color:#3C2F2F;
 
-overflow-x:hidden;
+    overflow:hidden;
+
+}
+
+/* Background */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at top,#FFFDFB,#F8F5F2);
+
+    z-index:-2;
+
+}
+
+/* Landing Page */
+
+.landing{
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+/* Card */
+
+.card{
+
+    width:420px;
+
+    max-width:90%;
+
+    background:#FFFDFB;
+
+    border:1px solid #E8E2DC;
+
+    border-radius:28px;
+
+    padding:55px 40px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.08);
+
+}
+
+/* Envelope */
+
+.envelope{
+
+    font-size:58px;
+
+    margin-bottom:28px;
+
+}
+
+/* Small text */
+
+.intro{
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#9A8C84;
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+}
+
+/* Main Title */
+
+h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+/* Message */
+
+.message{
+
+    line-height:1.8;
+
+    color:#6C5F5B;
+
+    margin-bottom:40px;
+
+}
+
+/* Button */
+
+button{
+
+    background:#D8A7B1;
+
+    color:white;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:16px 42px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    background:#C9909B;
+
+    box-shadow:0 12px 30px rgba(216,167,177,.35);
 
 }
