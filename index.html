@@ -1,151 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>For Razia 🤍</title>
+    <title>Our Little World ❤️</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Cute Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Audio -->
-    <audio id="pumpkinMusic" loop>
-        <source src="music/pumpkin.mp3" type="audio/mpeg">
-    </audio>
+    <!-- Background -->
+    <div id="background"></div>
 
-    <audio id="letterMusic" loop>
-        <source src="music/until-i-found-you.mp3" type="audio/mpeg">
-    </audio>
+    <!-- Floating Hearts -->
+    <div id="hearts"></div>
 
-    <!-- Landing -->
-    <section id="landing">
+    <!-- Floating Stars -->
+    <div id="stars"></div>
 
-        <div class="landing-content">
+    <!-- Welcome Screen -->
+    <section id="welcome">
 
-            <p class="subtitle">
-                For Razia
-            </p>
+        <div class="envelope">
 
-            <h1>
-                A small corner of the internet,
-                made only for you.
-            </h1>
+            <div class="heart">
+                ❤️
+            </div>
 
-            <button id="beginBtn">
-                Begin
+            <h1>Someone made something just for you</h1>
+
+            <button id="openButton">
+                Open
             </button>
 
         </div>
 
     </section>
 
-    <!-- Hero -->
+    <!-- Homepage (hidden initially) -->
 
-    <section id="hero">
+    <section id="mainPage">
 
-        <img src="images/hero.jpeg" alt="Hero Photo">
+        <h1 class="title">
+            Our Little World ❤️
+        </h1>
 
-        <h2>
-            Every memory with you became one of my favorites.
-        </h2>
-
-        <p>
-            I wanted to make something that lasts
-            a little longer than a message.
+        <p class="subtitle">
+            Every moment with you is my favorite memory.
         </p>
 
-    </section>
+        <!-- Photos go here later -->
+        <div id="photoContainer">
 
-    <!-- Little Moments -->
+        </div>
 
-    <section id="moments">
+        <div class="buttons">
 
-        <h2>
-            Little Moments
-        </h2>
+            <button id="messageButton">
+                💌 Read My Letter
+            </button>
 
-        <div class="moments-container">
+            <button id="galleryButton">
+                📷 Memories
+            </button>
 
-            <!-- Photos go here later -->
+            <button id="musicButton">
+                🎵 Music
+            </button>
 
         </div>
 
     </section>
 
-    <!-- Letter -->
+    <!-- Love Letter Popup -->
 
-    <section id="letter">
+    <div id="letterPopup">
 
-        <h2>
-            A Letter For You
-        </h2>
+        <div class="letter">
 
-        <button id="letterBtn">
+            <span id="closeLetter">
+                ✖
+            </span>
 
-            Read My Letter
+            <h2>
+                To My Favorite Person ❤️
+            </h2>
 
-        </button>
+            <div id="letterContent">
 
-    </section>
+                Your message will go here...
 
-    <!-- Memory Wall -->
-
-    <section id="gallery">
-
-        <h2>
-
-            Our Memories
-
-        </h2>
-
-        <div class="gallery-grid">
+            </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Ending -->
-
-    <section id="ending">
-
-        <h2>
-
-            Thank You.
-
-        </h2>
-
-        <p>
-
-            For every smile.
-
-            <br><br>
-
-            For every memory.
-
-            <br><br>
-
-            For being you.
-
-        </p>
-
-        <h3>
-
-            For Razia.
-
-        </h3>
-
-    </section>
-
-    <script src="js/app.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
